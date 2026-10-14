@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plantBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="emeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#plantBg)" rx="16" />
+
+  <!-- Botanical Leaf / Geometric accents -->
+  <g opacity="0.15" fill="#34d399">
+    <path d="M 520 60 C 580 80 590 140 560 190 C 530 140 500 120 520 60 Z" />
+    <path d="M 80 260 C 130 240 160 300 140 340 C 90 330 70 290 80 260 Z" />
+  </g>
+
+  <!-- User Preference Panel -->
+  <g transform="translate(60, 60)">
+    <rect width="210" height="240" rx="12" fill="#064e3b" fill-opacity="0.6" stroke="rgba(52, 211, 153, 0.2)" stroke-width="1.5" />
+    <!-- Title -->
+    <text x="20" y="32" fill="#a7f3d0" font-family="sans-serif" font-size="13" font-weight="bold">Plant Match Inputs</text>
+    <line x1="20" y1="45" x2="190" y2="45" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+
+    <!-- Sunlight slider -->
+    <text x="20" y="70" fill="#cbd5e1" font-family="sans-serif" font-size="10">☀️ Sunlight Exposure</text>
+    <rect x="20" y="78" width="170" height="8" rx="4" fill="#1e293b" />
+    <rect x="20" y="78" width="130" height="8" rx="4" fill="url(#sunGrad)" />
+
+    <!-- Watering -->
+    <text x="20" y="112" fill="#cbd5e1" font-family="sans-serif" font-size="10">💧 Watering Frequency</text>
+    <rect x="20" y="120" width="170" height="8" rx="4" fill="#1e293b" />
+    <rect x="20" y="120" width="80" height="8" rx="4" fill="#38bdf8" />
+
+    <!-- Maintenance Level -->
+    <text x="20" y="154" fill="#cbd5e1" font-family="sans-serif" font-size="10">🌱 Maintenance Level</text>
+    <g transform="translate(20, 162)">
+      <rect width="48" height="20" rx="4" fill="#10b981" fill-opacity="0.3" stroke="#10b981" />
+      <text x="12" y="14" fill="#6ee7b7" font-size="9" font-family="sans-serif">Low</text>
+      
+      <rect x="56" width="56" height="20" rx="4" fill="#1e293b" stroke="rgba(255,255,255,0.1)" />
+      <text x="66" y="14" fill="#94a3b8" font-size="9" font-family="sans-serif">Medium</text>
+      
+      <rect x="120" width="50" height="20" rx="4" fill="#1e293b" stroke="rgba(255,255,255,0.1)" />
+      <text x="132" y="14" fill="#94a3b8" font-size="9" font-family="sans-serif">High</text>
+    </g>
+
+    <!-- Query Trigger -->
+    <rect x="20" y="196" width="170" height="28" rx="6" fill="#10b981" />
+    <text x="56" y="214" fill="#022c22" font-family="sans-serif" font-size="11" font-weight="bold">🔍 Find Best Match</text>
+  </g>
+
+  <!-- Recommendation Output Card -->
+  <g transform="translate(320, 60)">
+    <rect width="220" height="240" rx="12" fill="#0f172a" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.5" filter="url(#emeraldGlow)" />
+    
+    <!-- Top badge -->
+    <g transform="translate(20, 20)">
+      <rect width="96" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" />
+      <text x="14" y="14" fill="#34d399" font-family="sans-serif" font-size="9" font-weight="bold">★ 98% Match</text>
+    </g>
+
+    <!-- Plant Icon Motif -->
+    <g transform="translate(110, 80)">
+      <circle cx="0" cy="0" r="32" fill="#064e3b" stroke="#34d399" stroke-width="2" />
+      <!-- Stylized sprout -->
+      <path d="M 0 15 C 0 -15 -18 -8 -15 -25 C 2 -20 10 -5 0 15 Z" fill="#34d399" />
+      <path d="M 0 5 C 0 -10 18 -4 15 -18 C 0 -15 -5 0 0 5 Z" fill="#6ee7b7" />
+    </g>
+
+    <text x="110" y="135" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Monstera Deliciosa</text>
+    <text x="110" y="152" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="11">Swiss Cheese Plant • Indoor</text>
+
+    <!-- Feature tags -->
+    <g transform="translate(25, 172)">
+      <rect width="78" height="20" rx="4" fill="#1e293b" />
+      <text x="8" y="14" fill="#a7f3d0" font-size="9" font-family="sans-serif">Moderate Light</text>
+
+      <rect x="88" width="82" height="20" rx="4" fill="#1e293b" />
+      <text x="96" y="14" fill="#93c5fd" font-size="9" font-family="sans-serif">Weekly Water</text>
+    </g>
+
+    <!-- Django backend indicator -->
+    <rect x="25" y="202" width="170" height="22" rx="4" fill="#047857" fill-opacity="0.3" stroke="#059669" />
+    <text x="45" y="217" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="9">Django • SQLite Powered</text>
+  </g>
+</svg>

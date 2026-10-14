@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="govBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="50%" stop-color="#0f2b48" />
+      <stop offset="100%" stop-color="#071526" />
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="emeraldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="govGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="420" fill="url(#govBg)" rx="18" />
+
+  <!-- Grid Map Geometry -->
+  <g stroke="rgba(56, 189, 248, 0.08)" stroke-width="1">
+    <line x1="0" y1="70" x2="700" y2="70" />
+    <line x1="0" y1="140" x2="700" y2="140" />
+    <line x1="0" y1="210" x2="700" y2="210" />
+    <line x1="0" y1="280" x2="700" y2="280" />
+    <line x1="0" y1="350" x2="700" y2="350" />
+    <line x1="100" y1="0" x2="100" y2="420" />
+    <line x1="200" y1="0" x2="200" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="400" y1="0" x2="400" y2="420" />
+    <line x1="500" y1="0" x2="500" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+  </g>
+
+  <!-- Top App Navigation Bar Mockup -->
+  <g transform="translate(40, 25)">
+    <rect width="620" height="42" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <circle cx="24" cy="21" r="5" fill="#ef4444" />
+    <circle cx="40" cy="21" r="5" fill="#eab308" />
+    <circle cx="56" cy="21" r="5" fill="#10b981" />
+    
+    <!-- Title / Brand -->
+    <text x="80" y="26" fill="#38bdf8" font-family="'Outfit', sans-serif" font-weight="bold" font-size="14">🏛️ GovSolve Citizen Portal</text>
+    <text x="320" y="26" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">govsolve.citizen.org • Smart Civic Resolution</text>
+    
+    <rect x="520" y="10" width="85" height="22" rx="11" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1" />
+    <text x="532" y="25" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold">● Live Portal</text>
+  </g>
+
+  <!-- Left Card: Citizen Grievance Submission Flow -->
+  <g transform="translate(40, 85)">
+    <rect width="320" height="300" rx="14" fill="#0b1329" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5" />
+    
+    <!-- Header -->
+    <text x="20" y="32" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Submit Civic Grievance</text>
+    <line x1="20" y1="44" x2="300" y2="44" stroke="rgba(255,255,255,0.08)" />
+
+    <!-- Category selector -->
+    <text x="20" y="68" fill="#94a3b8" font-family="sans-serif" font-size="10">ISSUE CATEGORY</text>
+    <rect x="20" y="76" width="280" height="30" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)" />
+    <text x="32" y="96" fill="#38bdf8" font-family="sans-serif" font-size="11">🛣️ Road Repair & Infrastructure</text>
+
+    <!-- Location Geotag -->
+    <text x="20" y="128" fill="#94a3b8" font-family="sans-serif" font-size="10">AUTOMATIC GEOLOCATION</text>
+    <rect x="20" y="136" width="280" height="30" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)" />
+    <text x="32" y="156" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">📍 21.3128° N, 74.8795° E (Shirpur Ward 4)</text>
+
+    <!-- Photo upload mockup -->
+    <text x="20" y="188" fill="#94a3b8" font-family="sans-serif" font-size="10">EVIDENCE PHOTO & DESCRIPTION</text>
+    <rect x="20" y="196" width="280" height="42" rx="6" fill="#132338" stroke="rgba(56, 189, 248, 0.3)" stroke-dasharray="3 3" />
+    <text x="80" y="222" fill="#38bdf8" font-family="sans-serif" font-size="10">📷 pothole_evidence_ward4.jpg attached</text>
+
+    <!-- Submit Action Button -->
+    <rect x="20" y="250" width="280" height="34" rx="8" fill="url(#cyanAccent)" />
+    <text x="95" y="272" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Dispatch Grievance 🚀</text>
+  </g>
+
+  <!-- Right Side: Real-time Resolution Telemetry & Department Status -->
+  <g transform="translate(380, 85)">
+    <rect width="280" height="300" rx="14" fill="#0b1329" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" filter="url(#govGlow)" />
+    
+    <text x="20" y="32" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Resolution Tracker</text>
+    <text x="200" y="32" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10">ID: #GS-2026-89</text>
+    <line x1="20" y1="44" x2="260" y2="44" stroke="rgba(255,255,255,0.08)" />
+
+    <!-- Stepper Pipeline -->
+    <g transform="translate(20, 60)">
+      <!-- Step 1 -->
+      <circle cx="12" cy="12" r="10" fill="#10b981" />
+      <text x="12" y="15" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">✓</text>
+      <text x="32" y="14" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">Complaint Lodged</text>
+      <text x="32" y="26" fill="#94a3b8" font-family="sans-serif" font-size="9">Logged with citizen verification</text>
+
+      <line x1="12" y1="24" x2="12" y2="52" stroke="#10b981" stroke-width="2" />
+
+      <!-- Step 2 -->
+      <g transform="translate(0, 42)">
+        <circle cx="12" cy="12" r="10" fill="#10b981" />
+        <text x="12" y="15" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">✓</text>
+        <text x="32" y="14" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">Department Routed</text>
+        <text x="32" y="26" fill="#94a3b8" font-family="sans-serif" font-size="9">Assigned to Municipal PWD Engineer</text>
+      </g>
+
+      <line x1="12" y1="66" x2="12" y2="94" stroke="#06b6d4" stroke-width="2" stroke-dasharray="3 2" />
+
+      <!-- Step 3 -->
+      <g transform="translate(0, 84)">
+        <circle cx="12" cy="12" r="10" fill="#0284c7" />
+        <circle cx="12" cy="12" r="5" fill="#38bdf8" />
+        <text x="32" y="14" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">Field Work In Progress</text>
+        <text x="32" y="26" fill="#94a3b8" font-family="sans-serif" font-size="9">Repair crew deployed on-site</text>
+      </g>
+
+      <line x1="12" y1="108" x2="12" y2="136" stroke="#475569" stroke-width="2" stroke-dasharray="3 2" />
+
+      <!-- Step 4 -->
+      <g transform="translate(0, 126)">
+        <circle cx="12" cy="12" r="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+        <text x="32" y="14" fill="#64748b" font-family="sans-serif" font-size="11">Resolved & Verified</text>
+        <text x="32" y="26" fill="#475569" font-family="sans-serif" font-size="9">Citizen feedback & closure confirmation</text>
+      </g>
+    </g>
+
+    <!-- Resolution Metric Box -->
+    <g transform="translate(20, 226)">
+      <rect width="240" height="52" rx="8" fill="#111c33" stroke="rgba(56, 189, 248, 0.2)" />
+      <text x="14" y="22" fill="#94a3b8" font-family="sans-serif" font-size="10">Average Ward Response Time</text>
+      <text x="14" y="42" fill="#34d399" font-family="'Outfit', sans-serif" font-size="16" font-weight="bold">&lt; 24 Hours • 98.4% Resolution Rate</text>
+    </g>
+  </g>
+</svg>

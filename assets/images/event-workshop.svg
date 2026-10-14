@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="workGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082f49" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#021c33" />
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#workGrad)" rx="16" />
+
+  <!-- Code / Terminal Motif in Center -->
+  <g transform="translate(180, 100)">
+    <rect width="240" height="130" rx="10" fill="#090d16" stroke="url(#cyanBlue)" stroke-width="2" />
+    <rect width="240" height="24" rx="10" fill="#132338" />
+    <circle cx="16" cy="12" r="3.5" fill="#ef4444" />
+    <circle cx="28" cy="12" r="3.5" fill="#eab308" />
+    <circle cx="40" cy="12" r="3.5" fill="#10b981" />
+    <text x="60" y="16" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">ai_hands_on_lab.py</text>
+
+    <!-- Code lines -->
+    <text x="18" y="48" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">import tensorflow as tf</text>
+    <text x="18" y="66" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="10">model.compile(optimizer='adam')</text>
+    <text x="18" y="84" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10">print("Training epoch 50/50 [===]")</text>
+    <text x="18" y="104" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="10">accuracy = 96.8%  ✓ Done</text>
+  </g>
+
+  <!-- Tag badge -->
+  <g transform="translate(205, 40)">
+    <rect width="190" height="30" rx="15" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1" />
+    <text x="95" y="20" text-anchor="middle" fill="#7dd3fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">🔬 TECHNICAL WORKSHOP</text>
+  </g>
+
+  <!-- Title & Description -->
+  <text x="300" y="265" text-anchor="middle" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="20">AI, Python & Cloud Computing Lab</text>
+  <text x="300" y="290" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Hands-on Implementation • Industry Mentorship & Model Deployment</text>
+
+  <!-- Placeholder Prompt -->
+  <g transform="translate(140, 318)">
+    <rect width="320" height="34" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <text x="160" y="22" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">📷 [Awaiting Your Workshop Photo to Replace]</text>
+  </g>
+</svg>

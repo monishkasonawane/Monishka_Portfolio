@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1035" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#181829" />
+    </linearGradient>
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#hackGrad)" rx="16" />
+
+  <!-- Grid overlay -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="80" x2="600" y2="80" />
+    <line x1="0" y1="160" x2="600" y2="160" />
+    <line x1="0" y1="240" x2="600" y2="240" />
+    <line x1="0" y1="320" x2="600" y2="320" />
+    <line x1="120" y1="0" x2="120" y2="380" />
+    <line x1="240" y1="0" x2="240" y2="380" />
+    <line x1="360" y1="0" x2="360" y2="380" />
+    <line x1="480" y1="0" x2="480" y2="380" />
+  </g>
+
+  <!-- Trophy & Coding Badges -->
+  <g transform="translate(300, 150)">
+    <circle cx="0" cy="0" r="64" fill="#2e1065" stroke="url(#neonPurple)" stroke-width="2.5" />
+    <!-- Trophy Icon Motif -->
+    <path d="M -22 -22 L 22 -22 L 18 10 C 14 20 0 24 0 24 C 0 24 -14 20 -18 10 Z" fill="#ec4899" opacity="0.9" />
+    <path d="M -6 24 L 6 24 L 10 36 L -10 36 Z" fill="#a855f7" />
+    <path d="M -16 36 L 16 36 L 14 42 L -14 42 Z" fill="#c084fc" />
+    <!-- Trophy Handles -->
+    <path d="M -22 -14 C -34 -14 -34 6 -20 6" fill="none" stroke="#ec4899" stroke-width="2.5" />
+    <path d="M 22 -14 C 34 -14 34 6 20 6" fill="none" stroke="#ec4899" stroke-width="2.5" />
+  </g>
+
+  <!-- Tag badge -->
+  <g transform="translate(210, 40)">
+    <rect width="180" height="30" rx="15" fill="rgba(168, 85, 247, 0.2)" stroke="#a855f7" stroke-width="1" />
+    <text x="90" y="20" text-anchor="middle" fill="#f472b6" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">🏆 HACKATHON EVENT</text>
+  </g>
+
+  <!-- Text and description -->
+  <text x="300" y="255" text-anchor="middle" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="20">Smart Hackathon & Innovation Challenge</text>
+  <text x="300" y="280" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">Collaborative Problem Solving • AI/ML & Civic Tech Prototype</text>
+
+  <!-- Placeholder Prompt -->
+  <g transform="translate(140, 310)">
+    <rect width="320" height="34" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <text x="160" y="22" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">📷 [Awaiting Your Event Photo to Replace]</text>
+  </g>
+</svg>
